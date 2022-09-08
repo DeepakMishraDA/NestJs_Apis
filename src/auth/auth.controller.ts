@@ -6,7 +6,7 @@ export class AuthController {
     constructor(private authService: AuthService){}
 
 @Get()
-login(): void {
+login(): string {
     return this.authService.login();
 }
 }
